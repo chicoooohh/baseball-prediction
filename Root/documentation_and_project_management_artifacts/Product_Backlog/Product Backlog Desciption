@@ -1,0 +1,7 @@
+The backlog is prioritized to emphasize core functionality and future enhancements. 
+The top priority is building a robust win probability prediction model based on the combination of batting, fielding, and pitching statistics. 
+The second high-priority item is implementing a Monte Carlo simulation engine that provides probabilistic win outcomes. 
+Medium-priority tasks include adding features such as home-field advantage and enabling custom team selections for generalized matchups. 
+A lower-priority item includes building visual tools to break down how individual players contribute to their team’s score. 
+All backlog items align with the user needs and allow for incremental upgrades to the simulation system.
+
