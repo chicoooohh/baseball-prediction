@@ -1,0 +1,28 @@
+import pandas as pd
+
+whitesox_pitching = pd.read_csv("whitesox_value_pitching_clean.csv")
+whitesox_fielding = pd.read_csv("whitesox_standard_fielding_clean.csv")
+whitesox_batting = pd.read_csv("whitesox_standard_batting_clean.csv")
+cubs_pitching = pd.read_csv("cubs_standard_pitching_clean.csv")
+cubs_fielding = pd.read_csv("cubs_standard_fielding_clean.csv")
+cubs_batting = pd.read_csv("cubs_standard_batting_clean.csv")
+
+whitesox_batting_metrics = whitesox_batting[['OPS', 'rOBA']].mean().rename('White Sox')
+cubs_batting_metrics = cubs_batting[['OPS', 'rOBA']].mean().rename('Cubs')
+
+whitesox_fielding_metrics = whitesox_fielding[['Rdrs']].mean().rename('White Sox')
+cubs_fielding_metrics = cubs_fielding[['Rdrs']].mean().rename('Cubs')
+
+whitesox_pitching_metrics = whitesox_pitching[['RA9', 'WAR']].mean().rename('White Sox')
+cubs_pitching_metrics = cubs_pitching[['ERA', 'WHIP']].mean().rename('Cubs')
+
+performance_data = pd.DataFrame({
+    'OPS (Batting)': [whitesox_batting_metrics['OPS'], cubs_batting_metrics['OPS']],
+    'rOBA (Batting)': [whitesox_batting_metrics['rOBA'], cubs_batting_metrics['rOBA']],
+    'Rdrs (Fielding)': [whitesox_fielding_metrics['Rdrs'], cubs_fielding_metrics['Rdrs']],
+    'RA9/ERA (Pitching)': [whitesox_pitching_metrics['RA9'], cubs_pitching_metrics['ERA']],
+    'WAR/WHIP (Pitching)': [whitesox_pitching_metrics['WAR'], cubs_pitching_metrics['WHIP']],
+}, index=['White Sox', 'Cubs'])
+
+
+performance_data
