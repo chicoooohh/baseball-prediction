@@ -1,0 +1,7 @@
+| Timestamp        | Activity                                                         |
+| ---------------- | ---------------------------------------------------------------- |
+| 2025-05-19 13:00 | Loaded and validated CSVs for White Sox and Cubs                 |
+| 2025-05-19 13:10 | Extracted team performance metrics (batting, pitching, fielding) |
+| 2025-05-19 13:20 | Built a unified scoring formula across normalized metrics        |
+| 2025-05-19 13:30 | Executed 10,000 Monte Carlo simulations                          |
+| 2025-05-19 13:45 | Drafted Functional Specs, WBS, Backlog, and Roadmap              |
