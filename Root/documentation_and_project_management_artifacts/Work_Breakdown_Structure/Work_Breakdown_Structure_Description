@@ -1,0 +1,7 @@
+The project is divided into five major work packages, each containing specific subtasks. 
+The first stage is Data Preparation, which involves loading the CSV datasets for batting, fielding, and pitching and checking for structural consistency and null values. 
+The second stage is Feature Engineering, which computes team averages across key metrics such as OPS, rOBA, Rdrs, RA9, WAR, and WHIP. 
+The third stage, Modeling, focuses on building a team scoring function by combining these metrics, followed by implementing a Monte Carlo simulation using standardized score differentials and random noise.
+The fourth package, Results Analysis, involves running 10,000 iterations of the simulation, comparing results, and calculating the win rate for each team. 
+The final work package is Documentation, which includes writing the functional specifications, WBS, backlog, logs, and roadmap in a cohesive report format. 
+This structured breakdown ensured efficient allocation of effort and traceability of progress throughout development.
