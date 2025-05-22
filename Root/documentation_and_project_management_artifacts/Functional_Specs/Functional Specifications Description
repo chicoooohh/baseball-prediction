@@ -1,0 +1,8 @@
+This simulation project aims to estimate the win probability between two professional baseball teams—White Sox and Cubs—using historical performance data. 
+The core functionality is based on ingesting and aggregating player-level statistics, including batting (OPS, rOBA), fielding (Rdrs), and pitching (WAR, ERA/RA9, WHIP). 
+The goal is to transform these inputs into team-level performance indicators, normalize them, and input them into a Monte Carlo simulation model that estimates win probabilities through repeated randomized matchups.
+Three primary user stories guided the design. 
+First, as a sports analyst, the user wants to simulate matchups using real data to better forecast game outcomes. 
+Second, from a fan’s perspective, the system should clearly report which team has a higher chance of winning. 
+Third, from a developer standpoint, the code should be modular, reproducible, and capable of being extended with new features (e.g., home-field advantage). 
+Acceptance criteria include correct ingestion of data, generation of interpretable team-level scores, and simulation output that estimates win probabilities across thousands of trials.
